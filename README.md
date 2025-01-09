@@ -3,7 +3,7 @@ Dirijete a la terminal y escribe ```nano nombre_archivo.sh ```
 y con eso creas el script.
 
 # ejecuta archivo sh.
-donde lo guardes, solo ejecuta ./nombre_archivo.sh, tal como le pongas de nombre y esperar
+donde lo guardes, solo ejecuta ```./nombre_archivo.sh```, tal como le pongas de nombre y esperar
 
 
 # Exporta todas las extenciones en bash 
