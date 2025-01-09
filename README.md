@@ -1,4 +1,24 @@
-# automatizarExtenciones, el primer script importa todas las extenciones
+# crea un archivo sh.
+Dirijete a la terminal y escribe ```nano nombre_archivo.sh ```
+y con eso creas el script.
+
+# ejecuta archivo sh.
+donde lo guardes, solo ejecuta ./nombre_archivo.sh, tal como le pongas de nombre y esperar
+
+
+# Exporta todas las extenciones en bash 
+```
+#!/bin/bash
+
+# Archivo de salida donde se guardarán las extensiones
+EXT_FILE="extensiones.txt"
+
+# Exporta las extensiones instaladas y las guarda en el archivo
+codium --list-extensions > "$EXT_FILE"
+
+echo "Las extensiones instaladas se han guardado en $EXT_FILE."
+```
+# Importa todas las extenciones
 ```#!/bin/bash
 
 # Archivo que contiene las extensiones
@@ -20,15 +40,4 @@ done < "$EXT_FILE"
 
 echo "Todas las extensiones han sido instaladas."
 ```
-# exporta todas las extenciones en bash 
-```
-#!/bin/bash
 
-# Archivo de salida donde se guardarán las extensiones
-EXT_FILE="extensiones.txt"
-
-# Exporta las extensiones instaladas y las guarda en el archivo
-codium --list-extensions > "$EXT_FILE"
-
-echo "Las extensiones instaladas se han guardado en $EXT_FILE."
-```
