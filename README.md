@@ -1,4 +1,4 @@
-# automatizarExtenciones
+# automatizarExtenciones, el primer script importa todas las extenciones
 ```#!/bin/bash
 
 # Archivo que contiene las extensiones
@@ -19,4 +19,16 @@ while IFS= read -r EXTENSION; do
 done < "$EXT_FILE"
 
 echo "Todas las extensiones han sido instaladas."
+```
+# exporta todas las extenciones en bash 
+```
+#!/bin/bash
+
+# Archivo de salida donde se guardarán las extensiones
+EXT_FILE="extensiones.txt"
+
+# Exporta las extensiones instaladas y las guarda en el archivo
+codium --list-extensions > "$EXT_FILE"
+
+echo "Las extensiones instaladas se han guardado en $EXT_FILE."
 ```
